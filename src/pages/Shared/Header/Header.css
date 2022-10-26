@@ -1,0 +1,20 @@
+
+.nav-item{
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #61777F;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .4s;
+}
+
+.tutor-logo{
+    width: 250px;
+}
+
+.nav-item:hover{
+    color: #51bfa1;
+
+}
