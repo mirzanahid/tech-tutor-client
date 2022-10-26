@@ -1,20 +1,122 @@
-
-.nav-item{
+.navbar{
+ height: 90px;
+}
+.nav-item {
     font-family: Arimo;
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
     color: #61777F;
     text-decoration: none;
-    margin-left: 30px;
+    margin-right: 30px;
     transition: .4s;
 }
 
-.tutor-logo{
+.tutor-logo {
     width: 250px;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     color: #51bfa1;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+    position: relative;
 
 }
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;;
+    cursor: pointer;
+}
+
+.profile-popup-main {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+    z-index: 999;
+    padding-top: 16px;
+    display: none;
+    transition: .4s;
+}
+
+.profile-popup {
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+}
+
+.profile-info-container {
+    display: flex;
+    align-items: center;
+}
+
+.inner-profile img{
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-family: Arimo;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #61777F;
+    margin-bottom: 0;
+}
+
+.profile-email {
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #61777F;
+    margin-bottom: 10px;
+}
+
+.profile-visit {
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #61777F;
+}
+
+.profile-visit:hover {
+    color: #61777F;
+}
+
+.signout-btn {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    background: transparent;
+    border: none;
+    color: #61777F;
+    text-decoration: underline;
+    margin-top: 10px;
+
+}
+
+.profile:hover .profile-popup-main {
+    display: block;
+}
+
+/* .profile-popup:hover{
+    display: block;
+} */

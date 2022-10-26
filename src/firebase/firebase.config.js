@@ -5,13 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDUYCH-xC-rXJhtjvCKknbJE9hoUNszoa4",
-    authDomain: "technext-institute.firebaseapp.com",
-    projectId: "technext-institute",
-    storageBucket: "technext-institute.appspot.com",
-    messagingSenderId: "796472589784",
-    appId: "1:796472589784:web:ecbd1f5da59d05f92ec6ad"
+  apiKey: "AIzaSyAn-CXzKIpSikx0FJE2VBM-pw2bAVORBhg",
+  authDomain: "tech-tutor-d3a50.firebaseapp.com",
+  projectId: "tech-tutor-d3a50",
+  storageBucket: "tech-tutor-d3a50.appspot.com",
+  messagingSenderId: "377973598013",
+  appId: "1:377973598013:web:eba9e26c44b26ee1ec0754"
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+ const app = initializeApp(firebaseConfig);
+ export default app;

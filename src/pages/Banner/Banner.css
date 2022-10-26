@@ -1,0 +1,40 @@
+.banner{
+    padding-top: 50px;
+}
+.banner-texts{
+    margin-top: 60px;
+}
+.banner-sub-heading{
+    font-family: Arimo;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.banner-heading{
+    font-family: Arimo;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banner-pragraph{
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 400px;
+}
+.banner-btn{
+    font-family: Arimo;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: inline-block;
+}
+

@@ -1,4 +1,29 @@
 
+/* .dark p{
+    color: red !important;
+}
+.dark a{
+    color: red;
+}
+
+.App {}
 .font{
     color: #61777F;
+} */
+
+
+.text-color{
+    color: #61777F;
+}
+.text-color2{
+    color: #fff;
+}
+.text-color3{
+    color: #fff;
+}
+.text-color3:hover{
+    color: #fff;
+}
+.bg-color{
+    background: #51bfa1;
 }
