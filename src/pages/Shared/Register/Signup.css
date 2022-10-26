@@ -1,0 +1,115 @@
+.login-signup {
+    background: url(../../../assets/login-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 900px;
+}
+
+.login-signup .overlay {
+
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.login-signup-container {
+    background: #fff;
+    padding: 50px 60px;
+}
+
+.login-signup-container .heading {
+    font-family: Arimo;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #61777F;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-signup-container-form {
+    width: 400px;
+}
+
+.login-signup-container-form label {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #61777F;
+}
+
+.login-signup-container-form input {
+    font-family: Arimo;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #61777F;
+    height: 50px;
+
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    background: #1273EB;
+    border: none;
+}
+
+.already-have-acc {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #61777F;
+    margin-top: 10px;
+}
+
+.already-have-acc a {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.thirdparty-signup {
+    width: 100%;
+    padding: 12px;
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #61777F;
+    background: #fff;
+    border: 2px solid #f1f1f1;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.google-icon {
+    width: 30px;
+}
+
+.github-icon {
+    width: 24px;
+    margin-right: 5px;
+}
+
+.or {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #61777F;
+    text-align: center;
+    margin-top: 10px;
+}
