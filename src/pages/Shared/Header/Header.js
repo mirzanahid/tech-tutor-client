@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import './Header.css';
-import logo from '../../../assets/logo6.svg'
+import logo from '../../../assets/logo.svg'
 import avatar from '../../../assets/avatar.svg'
 import { Button } from 'react-bootstrap';
 

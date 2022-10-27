@@ -1,0 +1,20 @@
+.course{
+  padding-top: 50px;
+}
+.course-sidebar {
+
+}
+
+.courses-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-heading {
+    font-family: Arimo;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 60px;
+}

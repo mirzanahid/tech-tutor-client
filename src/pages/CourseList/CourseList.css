@@ -1,0 +1,11 @@
+.course-list-item{
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

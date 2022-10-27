@@ -24,6 +24,21 @@
 .text-color3:hover{
     color: #fff;
 }
+.text-color4{
+    color: #000;
+}
+.text-color5{
+    color: #51bfa1;
+}
+.text-color6{
+    color: goldenrod;
+}
+.text-color7{
+    color: #000;
+}
+.text-color7:hover{
+    color: #51bfa1;
+}
 .bg-color{
     background: #51bfa1;
 }

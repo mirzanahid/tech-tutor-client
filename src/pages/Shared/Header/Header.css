@@ -1,5 +1,7 @@
 .navbar{
  height: 90px;
+ box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+
 }
 .nav-item {
     font-family: Arimo;
@@ -13,7 +15,7 @@
 }
 
 .tutor-logo {
-    width: 250px;
+    width: 210px;
 }
 
 .nav-item:hover {
@@ -21,8 +23,8 @@
 }
 
 .profile {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-left: 30px;
     position: relative;
@@ -30,9 +32,9 @@
 }
 
 .profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
