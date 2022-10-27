@@ -6,10 +6,18 @@ import './Signup.css';
 import google from '../../../assets/google.png';
 import github from '../../../assets/github.png';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import { getAuth, GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import app from '../../../firebase/firebase.config';
+
+const auth = getAuth(app)
+// google provider
+const provider = new GoogleAuthProvider();
+//github provider
+const githubProvider = new GithubAuthProvider();
 
 const Signup = () => {
 
-    const { user, createUser, handlerForGoogleLogin, handlerForGithubLogin } = useContext(AuthContext);
+    const { user, createUser } = useContext(AuthContext);
     const navigate = useNavigate();
 
     //error state maintain
@@ -58,6 +66,28 @@ const Signup = () => {
         setChecked(e.target.checked)
     }
 
+    //log in with google 
+    const handlerForGoogleSignin = () => {
+        signInWithPopup(auth, provider)
+            .then(result => {
+                navigate('/')
+            })
+            .catch(error => {
+                console.error('error', error)
+            })
+
+    }
+
+    //log in with git hub
+    const handlerForGithubSignin = () => {
+        signInWithPopup(auth, githubProvider)
+            .then(result => {
+                navigate('/')
+            })
+            .catch(error => {
+                console.error('error', error)
+            })
+    }
 
     return (
         <div className='login-signup'>
@@ -105,8 +135,8 @@ const Signup = () => {
                                 </Form>
                                 <p className='or'>Or</p>
                                 <div className="button-group">
-                                    <button onClick={handlerForGoogleLogin} className='thirdparty-signup'><img className='google-icon' src={google} alt="" /> Continue with Google</button>
-                                    <button onClick={handlerForGithubLogin} className='thirdparty-signup'> <img className='github-icon' src={github} alt="" /> Continue with GitHub</button>
+                                    <button onClick={handlerForGoogleSignin} className='thirdparty-signup'><img className='google-icon' src={google} alt="" /> Continue with Google</button>
+                                    <button onClick={handlerForGithubSignin} className='thirdparty-signup'> <img className='github-icon' src={github} alt="" /> Continue with GitHub</button>
                                 </div>
                                 <p className='already-have-acc'>Already have an account? <Link to={'/login'}>Log in</Link></p>
                             </div>

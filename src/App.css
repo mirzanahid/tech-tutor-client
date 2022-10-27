@@ -39,6 +39,15 @@
 .text-color7:hover{
     color: #51bfa1;
 }
+.text-color8{
+    color: #61777F;
+}
+.text-color8:hover{
+    color: #51bfa1;
+}
 .bg-color{
     background: #51bfa1;
+}
+.bg-color2{
+    background: #fff;
 }

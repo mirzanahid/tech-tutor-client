@@ -6,14 +6,23 @@ import './Login.css';
 import google from '../../../assets/google.png';
 import github from '../../../assets/github.png';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import { getAuth, GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { useState } from 'react';
-const Login = () => {
-    const { user, login, handlerForGoogleLogin, handlerForGithubLogin } = useContext(AuthContext);
+import app from '../../../firebase/firebase.config';
 
+
+const auth = getAuth(app)
+// google provider
+const provider = new GoogleAuthProvider();
+//github provider
+const githubProvider = new GithubAuthProvider();
+
+const Login = () => {
+    const { user, login } = useContext(AuthContext);
     const navigate = useNavigate()
     const [loginerro, setLoginerror] = useState(null);
 
-
+    //login with email and password
     const loginHandler = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -35,6 +44,31 @@ const Login = () => {
                 navigate('/')
             })
             .catch(error => console.error(error));
+    }
+
+
+
+    //log in with google 
+    const handlerForGoogleSignin = () => {
+        signInWithPopup(auth, provider)
+            .then(result => {
+                navigate('/')
+            })
+            .catch(error => {
+                console.error('error', error)
+            })
+
+    }
+
+    //log in with git hub
+    const handlerForGithubSignin = () => {
+        signInWithPopup(auth, githubProvider)
+            .then(result => {
+                navigate('/')
+            })
+            .catch(error => {
+                console.error('error', error)
+            })
     }
 
     return (
@@ -64,8 +98,8 @@ const Login = () => {
                                 </Form>
                                 <p className='or'>Or</p>
                                 <div className="button-group">
-                                    <button onClick={handlerForGoogleLogin} className='thirdparty-signup'><img className='google-icon' src={google} alt="" /> Continue with Google</button>
-                                    <button onClick={handlerForGithubLogin} className='thirdparty-signup'> <img className='github-icon' src={github} alt="" /> Continue with GitHub</button>
+                                    <button onClick={handlerForGoogleSignin} className='thirdparty-signup'><img className='google-icon' src={google} alt="" /> Continue with Google</button>
+                                    <button onClick={handlerForGithubSignin} className='thirdparty-signup'> <img className='github-icon' src={github} alt="" /> Continue with GitHub</button>
                                 </div>
 
                                 <p className='already-have-acc'>Don't you have an account? <Link to={'/signup'}>Sign Up</Link></p>

@@ -3,6 +3,7 @@
 }
 .course-details-top {
     text-align: center;
+    padding: 10px 20px;
 }
 
 .course-details-heading {
@@ -27,6 +28,9 @@
     font-size: 24px;
 }
 
+.course-details-container{
+    padding: 0 30px ;
+}
 .course-detail-pdf-btn {
     font-family: Arimo;
     font-size: 24px;
@@ -37,9 +41,11 @@
     border-radius: 5px;
     margin-bottom: 60px;
 }
-
+.course-image{
+    width: 710px;
+}
 .course-details-img {
-    width: 100%;
+    width: 710px;
     height: 400px;
 }
 

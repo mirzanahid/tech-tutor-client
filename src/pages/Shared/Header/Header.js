@@ -8,7 +8,6 @@ import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import './Header.css';
 import logo from '../../../assets/logo.svg'
 import avatar from '../../../assets/avatar.svg'
-import { Button } from 'react-bootstrap';
 
 
 
@@ -24,19 +23,21 @@ const Header = () => {
         <Navbar.Brand ><Link to={'/'}> <img className='tutor-logo' src={logo} alt="logo" /> </Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto align-items-center">
+          <Nav className="me-auto align-items-center justify-content-between nav">
 
-            <Link className='nav-item' to={'/'}>Home</Link>
-            <Link className='nav-item' to={'/courses'}>Our Courses</Link>
-            <Link className='nav-item' to={'/faq'}>Faq</Link>
-            <Link className='nav-item' to={'/blog'}>Blog</Link>
-            <Link className='nav-item' to={'/contact'}>Contact</Link>
+            <Link className='nav-item text-color8' to={'/'}>Home</Link>
+            <Link className='nav-item text-color8' to={'/courses'}>Our Courses</Link>
+            <Link className='nav-item text-color8' to={'/faq'}>Faq</Link>
+            <Link className='nav-item text-color8' to={'/blog'}>Blog</Link>
+            <Link className='nav-item text-color8' to={'/contact'}>Contact</Link>
+          </Nav>
+          <div className="right">
             {
               user?.uid ?
                 <div className='profile'>
                   <img src={user?.photoURL || avatar} alt="profile-image" />
                   <div className="profile-popup-main">
-                    <div className="profile-popup">
+                    <div className="profile-popup bg-color2">
                       <div className="profile-info-container">
                         <div className="inner-profile">
                           <img src={user?.photoURL || avatar} alt="profile-image" />
@@ -52,10 +53,9 @@ const Header = () => {
                   </div>
                 </div>
                 :
-                <Link className='nav-item' to={'/login'}>Log in</Link>
+                <Link className='nav-item-btn bg-color text-color3' to={'/login'}>Log in</Link>
             }
-
-          </Nav>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

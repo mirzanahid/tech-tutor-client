@@ -1,23 +1,20 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { createContext } from 'react';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword, onAuthStateChanged,
+    signOut
+} from "firebase/auth";
 import app from '../../firebase/firebase.config';
 
 
 export const AuthContext = createContext();
 const auth = getAuth(app)
-// google provider
-const provider = new GoogleAuthProvider();
-//github provider
-const githubProvider = new GithubAuthProvider();
-
-
 
 const AuthProvider = ({ children }) => {
-    const [user, setUser] = useState({ name: 'nahid' });
-
-
+    const [user, setUser] = useState({});
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
@@ -35,24 +32,6 @@ const AuthProvider = ({ children }) => {
     const login = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
-    //log in with google 
-    const handlerForGoogleLogin = () => {
-        signInWithPopup(auth, provider)
-            .then(result => {
-                const user = result.user;
-            })
-            .catch(error => {
-                console.error('error', error)
-            })
-    }
-    //log in with git hub
-    const handlerForGithubLogin = () => {
-        signInWithPopup(auth, githubProvider)
-            .then(result => {
-                const user = result.user;
-            });
-    }
-
 
 
     // logout
@@ -61,7 +40,7 @@ const AuthProvider = ({ children }) => {
     }
 
 
-    const authInfo = { user, createUser, login, logout, handlerForGoogleLogin, handlerForGithubLogin }
+    const authInfo = { user, createUser, login, logout }
     return (
         <AuthContext.Provider value={authInfo}>
             {children}
