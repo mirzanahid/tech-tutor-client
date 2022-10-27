@@ -1,0 +1,11 @@
+.faq{
+  padding-top: 60px;
+}
+.faq-heading{
+    font-family: Arimo;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 60px;
+}

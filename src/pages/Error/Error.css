@@ -1,0 +1,27 @@
+.error-container{
+    text-align: center;
+
+}
+.error-image{
+    width: 500px;
+    margin-top: 100px;
+}
+
+.error-heading{
+    font-family: Arimo;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.error-paragraph{
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.error-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

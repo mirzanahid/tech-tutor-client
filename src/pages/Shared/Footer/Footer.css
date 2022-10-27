@@ -1,0 +1,122 @@
+.footer{
+ padding-top: 60px;
+ margin-top: 100px;
+}
+.footer-logo {
+    width: 250px;
+}
+
+.footer-paragraph {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 330px;
+
+}
+
+.footer-social ul {
+    padding-left: 0;
+}
+
+.footer-social ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: inline-block;
+    text-align: center;
+
+
+}
+
+.footer-social a {
+    font-size: 22px;
+    transition: .4s;
+}
+
+.footer-links h3 {
+    font-family: Arimo;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+
+.quick-link ul {
+    padding-left: 0;
+}
+
+.quick-link ul li a {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.contact-information h3 {
+    font-family: Arimo;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.contact-information .icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+
+}
+
+.contact-icon {
+    font-size: 26px;
+}
+
+.contact-info {
+    padding-left: 30px;
+}
+
+.contact-info span {
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-block;
+    padding: 2px 3px;
+    margin-bottom: 5px;
+
+}
+
+.contact-info p {
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.footer-bottom{
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+.footer-copyright{
+    text-align: center;
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 400;
+}

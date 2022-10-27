@@ -1,4 +1,3 @@
-
 /* .dark p{
     color: red !important;
 }
@@ -12,42 +11,71 @@
 } */
 
 
-.text-color{
+
+.text-color {
     color: #61777F;
 }
-.text-color2{
+
+.text-color2 {
     color: #fff;
 }
-.text-color3{
+
+.text-color3 {
     color: #fff;
 }
-.text-color3:hover{
+
+.text-color3:hover {
     color: #fff;
 }
-.text-color4{
+
+.text-color4 {
     color: #000;
 }
-.text-color5{
+
+.text-color5 {
     color: #51bfa1;
 }
-.text-color6{
+
+.text-color6 {
     color: goldenrod;
 }
-.text-color7{
+
+.text-color7 {
     color: #000;
 }
-.text-color7:hover{
+
+.text-color7:hover {
     color: #51bfa1;
 }
-.text-color8{
+
+.text-color8 {
     color: #61777F;
 }
-.text-color8:hover{
+
+.text-color8:hover {
     color: #51bfa1;
 }
-.bg-color{
+
+.text-color9 {
+    color: #fff;
+
+}
+
+.text-color9:hover {
+    color: #61777F;
+}
+
+.bg-color {
     background: #51bfa1;
 }
-.bg-color2{
+
+.bg-color2 {
     background: #fff;
+}
+
+.bg-color3 {
+    background: #61777F;
+}
+.bg-color4 {
+    background: #18886a;
 }
