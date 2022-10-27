@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import CourseList from '../CourseList/CourseList';
-import SingleCourse from '../SingleCourse/SingleCourse';
+import SingleCourse from '../Shared/SingleCourse/SingleCourse';
 import './Course.css'
 
 const Courses = () => {

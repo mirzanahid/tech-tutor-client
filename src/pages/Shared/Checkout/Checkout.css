@@ -1,17 +1,44 @@
-.checkout{
-   padding-top: 60px;
+.checkout {
+    padding-top: 60px;
 }
 
-.checkout h3{
+.checkout h3 {
     font-family: Arimo;
     font-size: 30px;
     font-weight: 700;
     line-height: 50px;
 }
 
-.checkout{
+.checkout-courseName {
     font-family: Arimo;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.checkout-customerinfo {
+    font-family: Arimo;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 60px;
+}
+
+.checkout {
+    font-family: Arimo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.checkout-purchase-btn {
+    font-family: Arimo;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
 }

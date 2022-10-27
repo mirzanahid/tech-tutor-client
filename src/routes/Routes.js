@@ -8,6 +8,7 @@ import CourseDetails from '../pages/Shared/CourseDetails/CourseDetails';
 import Login from '../pages/Shared/Login/Login';
 import Profile from '../pages/Shared/Profile/Profile';
 import Signup from '../pages/Shared/Signup/Signup';
+import PrivateRoute from './PrivateRoute';
 
 
 export const router = createBrowserRouter([
@@ -31,9 +32,9 @@ export const router = createBrowserRouter([
 
             },
             {
-                path: '/premium-access/:id',
-                element: <Checkout></Checkout>,
-                loader: ({ params }) => fetch(`http://localhost:5000/premium-access/${params.id}`),
+                path: '/checkout/:id',
+                element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/checkout/${params.id}`),
 
             },
             {

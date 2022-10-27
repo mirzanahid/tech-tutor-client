@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link, useLoaderData } from 'react-router-dom';
-import { FaBook, FaUsers, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import Table from 'react-bootstrap/Table';
 import './CourseDetails.css';
 import Pdf from "react-to-pdf";
@@ -77,7 +77,7 @@ const CourseDetails = () => {
                                     </tbody>
                                 </Table>
                             </div>
-                            <Link to={`/premium-access/${id}`} className='premium-btn text-color3 bg-color'>Get premium access</Link>
+                            <Link to={`/checkout/${id}`} className='premium-btn text-color3 bg-color'>Get premium access</Link>
                         </div>
                     </Col>
                 </Row>

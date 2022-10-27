@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 import google from '../../../assets/google.png';
 import github from '../../../assets/github.png';
@@ -18,9 +18,16 @@ const provider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
 const Login = () => {
-    const { user, login } = useContext(AuthContext);
+    const { user, login,load} = useContext(AuthContext);
     const navigate = useNavigate()
     const [loginerro, setLoginerror] = useState(null);
+
+    // location state
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/'
+
+
+
 
     //login with email and password
     const loginHandler = (e) => {
@@ -40,8 +47,7 @@ const Login = () => {
         login(email, password)
             .then(result => {
                 const user = result.user
-                console.log(user)
-                navigate('/')
+                navigate(from, { replace: true })
             })
             .catch(error => console.error(error));
     }
@@ -52,7 +58,8 @@ const Login = () => {
     const handlerForGoogleSignin = () => {
         signInWithPopup(auth, provider)
             .then(result => {
-                navigate('/')
+             navigate(from, { replace: true })
+             load(false)
             })
             .catch(error => {
                 console.error('error', error)
@@ -64,7 +71,8 @@ const Login = () => {
     const handlerForGithubSignin = () => {
         signInWithPopup(auth, githubProvider)
             .then(result => {
-                navigate('/')
+                navigate(from, { replace: true })
+                load(false)
             })
             .catch(error => {
                 console.error('error', error)
