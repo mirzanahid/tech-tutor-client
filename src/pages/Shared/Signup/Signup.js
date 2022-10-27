@@ -42,7 +42,6 @@ const Signup = () => {
             setPasserror('password and confirm password does not match')
             form.password.reset()
             return
-
         }
 
         createUser(email, password)

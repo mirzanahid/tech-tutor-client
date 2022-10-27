@@ -1,0 +1,91 @@
+.course-detail{
+ padding-top: 50px;
+}
+.course-details-top {
+    text-align: center;
+}
+
+.course-details-heading {
+    font-family: Arimo;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 60px;
+
+}
+
+.details-ratings p {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.details-ratings p span {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.details-ratings .star-icon {
+    font-size: 24px;
+}
+
+.course-detail-pdf-btn {
+    font-family: Arimo;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+.course-details-img {
+    width: 100%;
+    height: 400px;
+}
+
+.course-details-headers {
+    font-family: Arimo;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.course-details-description {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.course-topics-list {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.course-info-table {
+    margin-top: 50px;
+}
+
+.course-info-table td {
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.premium-btn {
+    font-family: Arimo;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    display: inline-block;
+    text-decoration: none;
+}

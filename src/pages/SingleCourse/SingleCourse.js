@@ -4,7 +4,7 @@ import { FaBook, FaUsers, FaStar } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const SingleCourse = ({ course }) => {
-    const { title, thumbnail_url, instructor, ratings, price, details } = course;
+    const { title, thumbnail_url, instructor, ratings, price, details, id } = course;
     const { description, lectures, enrolled } = details;
     return (
         <div className='course-card'>
@@ -40,7 +40,7 @@ const SingleCourse = ({ course }) => {
                     <p className='d-flex align-items-center'><FaStar className='star-icon text-color6' /><span className='text-color'>{ratings.star}</span></p>
 
                 </div>
-                <Link className='course-details-btn bg-color text-color3'>View Details</Link>
+                <Link className='course-details-btn bg-color text-color3' to={`/courses/${id}`}>View Details</Link>
 
             </div>
 
