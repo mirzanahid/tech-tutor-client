@@ -8,13 +8,14 @@ import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import './Header.css';
 import logo from '../../../assets/logo.svg'
 import avatar from '../../../assets/avatar.svg'
+import Toggle from '../Toggle/Toggle';
 
 
 
 const Header = () => {
   const { user, logout } = useContext(AuthContext);
 
-
+  console.log(user)
 
 
   return (
@@ -31,7 +32,8 @@ const Header = () => {
             <Link className='nav-item text-color8' to={'/blog'}>Blog</Link>
             <Link className='nav-item text-color8' to={'/contact'}>Contact</Link>
           </Nav>
-          <div className="right">
+          <div className="right d-flex align-items-center">
+          <Toggle></Toggle>
             {
               user?.uid ?
                 <div className='profile'>
@@ -54,7 +56,9 @@ const Header = () => {
                 </div>
                 :
                 <Link className='nav-item-btn bg-color text-color3' to={'/login'}>Log in</Link>
+
             }
+         
           </div>
         </Navbar.Collapse>
       </Container>

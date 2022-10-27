@@ -17,7 +17,7 @@ const githubProvider = new GithubAuthProvider();
 
 const Signup = () => {
 
-    const { user, createUser } = useContext(AuthContext);
+    const { user, createUser, updateUserProfile } = useContext(AuthContext);
     const navigate = useNavigate();
 
     //error state maintain
@@ -56,11 +56,28 @@ const Signup = () => {
             .then(result => {
                 const user = result.user
                 console.log(user)
-                navigate('/login')
+                // navigate('/login')
+                form.reset()
+                handlerForUpdateNameAndPhoto(name, image)
+
             })
             .catch(error => { console.error(error) })
     }
+    //update image and name
 
+    const handlerForUpdateNameAndPhoto = (name, image) => {
+        const profile = {
+            displayName: name,
+            photoURL: image
+        }
+        updateUserProfile(profile)
+            .then(result => {
+
+            })
+            .catch(error => {
+                console.error('error', error)
+            })
+    }
     // checking checked box status
     const checkedHandler = (e) => {
         setChecked(e.target.checked)
@@ -101,8 +118,8 @@ const Signup = () => {
                                 <h3 className='heading'>Sign Up</h3>
                                 <Form onSubmit={signupHandler} className='login-logout-form'>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Label>Name</Form.Label>
-                                        <Form.Control type="text" placeholder="Enter Name" name='name' />
+                                        <Form.Label>Full Name</Form.Label>
+                                        <Form.Control type="text" placeholder="Enter Full Name" name='name' />
                                         <p className='text-danger'>{error}</p>
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">

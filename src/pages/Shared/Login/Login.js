@@ -18,9 +18,11 @@ const provider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
 const Login = () => {
-    const { user, login,load} = useContext(AuthContext);
+
+    const { user, login, load } = useContext(AuthContext);
     const navigate = useNavigate()
-    const [loginerro, setLoginerror] = useState(null);
+
+    const [logInError, setLogInError] = useState(null);
 
     // location state
     const location = useLocation();
@@ -37,32 +39,32 @@ const Login = () => {
         const password = form.password.value;
 
         if (!email && !password) {
-            setLoginerror('please provide valid email and password')
+            setLogInError('please provide valid email and password')
         }
 
-        else if (user?.email !== email && user?.password !== password) {
-            setLoginerror('your email and password is incorrect!')
+
+        if (user?.email !== email && user?.password !== password) {
+            setLogInError('your email and password is incorrect!')
+
         }
 
         login(email, password)
             .then(result => {
-                const user = result.user
                 navigate(from, { replace: true })
             })
-            .catch(error => console.error(error));
-    }
+            .catch(error => {
 
+            });
+    }
 
 
     //log in with google 
     const handlerForGoogleSignin = () => {
         signInWithPopup(auth, provider)
             .then(result => {
-             navigate(from, { replace: true })
-             load(false)
+                navigate(from, { replace: true })
             })
             .catch(error => {
-                console.error('error', error)
             })
 
     }
@@ -73,9 +75,9 @@ const Login = () => {
             .then(result => {
                 navigate(from, { replace: true })
                 load(false)
+             
             })
             .catch(error => {
-                console.error('error', error)
             })
     }
 
@@ -98,7 +100,7 @@ const Login = () => {
                                     <Form.Group className="mb-3" controlId="formBasicPassword">
                                         <Form.Label>Password</Form.Label>
                                         <Form.Control type="password" placeholder="Enter Password" name='password' />
-                                        <p className='text-danger'>{loginerro}</p>
+                                        <p className='text-danger'>{logInError}</p>
                                     </Form.Group>
                                     <button className='submit-btn' type="submit">
                                         Log In
