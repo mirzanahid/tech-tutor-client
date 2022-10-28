@@ -17,13 +17,12 @@ const Header = () => {
 
 
   return (
-    <Navbar className='navbar' expand="lg">
+    <Navbar sticky="top" className='navbar' expand="lg">
       <Container>
         <Navbar.Brand ><Link to={'/'}> <img className='tutor-logo' src={logo} alt="logo" /> </Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto align-items-center justify-content-between nav">
-
             <Link className='nav-item sub-heading active text-color8' to={'/'}>Home</Link>
             <Link className='nav-item sub-heading text-color8' to={'/courses'}>Our Courses</Link>
             <Link className='nav-item sub-heading text-color8' to={'/faq'}>Faq</Link>
@@ -53,9 +52,7 @@ const Header = () => {
                 </div>
                 :
                 <Link className='nav-item-btn bg-color text-color3' to={'/login'}>Log in</Link>
-
             }
-
           </div>
         </Navbar.Collapse>
       </Container>
