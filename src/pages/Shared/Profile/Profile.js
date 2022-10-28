@@ -1,7 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import { toast } from 'react-toastify';
@@ -40,8 +39,6 @@ const Profile = () => {
     }
 
 
-
-
     return (
         <div>
             <Container className='login-signup-container'>
@@ -63,7 +60,6 @@ const Profile = () => {
                                 Save Changes
                             </button>
                         </Form>
-
                     </Col>
                 </Row>
             </Container>

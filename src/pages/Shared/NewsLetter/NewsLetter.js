@@ -10,7 +10,6 @@ const NewsLetter = () => {
                 <p className='secondary-paragraph'>Subscribe our newsletter & get latest news and update!</p>
                 <form>
                     <div className="news-letter-form">
-
                         <input className='news-letter-input primary-paragraph' type="text" name="name" placeholder='Your Email Address' />
                         <button className='secondary-button2 news-letter-btn' type='submit'>Subscribe</button>
                     </div>

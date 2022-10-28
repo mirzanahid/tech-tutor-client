@@ -9,8 +9,6 @@ const Checkout = () => {
     const course = useLoaderData();
     const { title } = course
 
-
-    // console.log(user)
     return (
         <div>
             <Container>
@@ -23,7 +21,6 @@ const Checkout = () => {
                             <h2 className='checkout-customerinfo text-color4'>Customer Information:</h2>
                             <p className='text-color '>Your name:{user.displayName}</p>
                             <p className='text-color'>Your Email: {user.email}</p>
-
                             <Link to={'/courses'} className='checkout-purchase-btn secondary-button'>Purchase More</Link>
                         </div>
 

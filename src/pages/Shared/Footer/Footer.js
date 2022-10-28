@@ -12,8 +12,8 @@ const Footer = () => {
                 <Row>
                     <Col xl='4' lg='4' md='4'>
                         <Link><img className='footer-logo' src={logo2} alt="" /></Link>
-                        <p className='secondary-paragraph  footer-paragraph'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p className='secondary-paragraph footer-paragraph '> Ut enim ad minim veniam, quis nostrud exercitation ullmco laboris nisi ut aliquip ex ea.</p>
+                        <p className='secondary-paragraph  footer-paragraph'>TechTutor is always committed about quality. Our teacher are industry professionals.</p>
+                        <p className='secondary-paragraph footer-paragraph '> We serve every student equal. We always said if you stuck that means you'r learning very well.</p>
                         <div className="footer-social">
                             <ul>
                                 <li className='bg-color2 '>  <Link className='social-icons facebook-icon text-color8'><FaFacebookF /></Link></li>

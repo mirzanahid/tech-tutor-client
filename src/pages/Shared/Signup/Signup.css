@@ -160,9 +160,6 @@
 
 /* responsive for mobile device */
 @media only screen and (max-width: 575.98px) {
-
-
-
     .login-signup-container {
         padding: 30px 15px;
         margin-top: 50px;

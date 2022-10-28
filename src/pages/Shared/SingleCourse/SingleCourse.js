@@ -12,7 +12,6 @@ const SingleCourse = ({ course }) => {
                 <img src={thumbnail_url} alt="" />
             </div>
             <div className="card-info">
-
                 <div className="card-info-top">
                     <div className="instructor">
                         <img src={instructor.img} alt="" />
@@ -21,7 +20,6 @@ const SingleCourse = ({ course }) => {
                     <div className="price">
                         <p className='course-price bg-color text-color2'>${price}</p>
                     </div>
-
                 </div>
                 <div className="course-info">
                     <h4 className='text-color'>{title}</h4>
@@ -34,16 +32,13 @@ const SingleCourse = ({ course }) => {
                     <div className="enrollment">
                         <p className='text-color d-flex align-items-center'><FaUsers className='lessons-icons text-color5' /> {enrolled} Enrolled</p>
                     </div>
-
                 </div>
                 <div className="ratings">
                     <p className='d-flex align-items-center'><FaStar className='star-icon text-color6' /><span className='text-color'>{ratings.star}</span></p>
 
                 </div>
                 <Link className='course-details-btn secondary-button' to={`/courses/${id}`}>View Details</Link>
-
             </div>
-
         </div>
     );
 };

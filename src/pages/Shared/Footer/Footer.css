@@ -10,7 +10,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
     width: 330px;
-
 }
 
 .footer-social ul {
@@ -24,8 +23,6 @@
     margin-right: 20px;
     display: inline-block;
     text-align: center;
-
-
 }
 
 .footer-social a {
@@ -74,7 +71,6 @@
     border-radius: 50%;
     text-align: center;
     line-height: 38px;
-
 }
 
 .contact-icon {
@@ -93,7 +89,6 @@
     display: inline-block;
     padding: 2px 3px;
     margin-bottom: 5px;
-
 }
 
 .contact-info p {
@@ -112,7 +107,6 @@
     font-size: 16px;
     font-weight: 400;
 }
-
 
 /* responsive for mobile device */
 @media only screen and (max-width: 767.98px) {
@@ -171,8 +165,6 @@
 
 /* responsive for mobile-landscape device */
 @media only screen and (min-width: 767px) and (max-width: 991.98px) {
-
-
     .footer-logo {
         width: 200px;
     }
@@ -228,8 +220,6 @@
 
 /* responsive for laptop device */
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-
-
     .footer-logo {
         width: 200px;
     }

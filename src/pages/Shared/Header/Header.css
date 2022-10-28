@@ -13,25 +13,9 @@
     position: relative;
 }
 
-.nav-item::after {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    height: 0;
-    width: 50%;
-    background: #51bfa1;
-    content: '';
-}
-
-.active::after {
-    height: 4px;
-}
-
 .tutor-logo {
     width: 210px;
 }
-
-
 
 .nav-item-btn {
     font-family: Arimo;

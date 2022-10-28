@@ -21,4 +21,4 @@ TechTutor is online learning single web application. Where student can purchase 
 - we use three types of sign up system. these Email and Password, Sign up with google and sign up with github
 - You can update your User name and Photo as well.
 
-To live Experience, check out the [TechTutor](https://app.netlify.com/sites/quiz-ultra-9/settings/general)
+To live Experience, check out the [TechTutor](https://tech-tutor-d3a50.web.app/)

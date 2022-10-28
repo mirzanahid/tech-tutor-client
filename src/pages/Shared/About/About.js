@@ -17,7 +17,7 @@ const About = () => {
                     <Col lg='6' md='6'>
                         <div className="about-texts">
                             <h3 className='sub-heading2 text-color about-heading'>About Us</h3>
-                            <p className='primary-paragraph about-paragraph'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique iure expedita maiores. Accusantium, minima labore quae ducimus aliquam mollitia repudiandae.</p>
+                            <p className='primary-paragraph about-paragraph'>TechTutor is online learning web application. Where student can easily access courses and start learning. If they stuck TechTutor powerful support with them. </p>
                             <Link className='primary-button about-btn' to={'./courses'}>Explore Courses</Link>
                         </div>
                     </Col>

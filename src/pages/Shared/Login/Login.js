@@ -66,7 +66,6 @@ const Login = () => {
             });
     }
 
-
     //log in with google 
     const handlerForGoogleSignin = () => {
         signInWithPopup(auth, provider)
@@ -99,7 +98,6 @@ const Login = () => {
                             <div className="login-signup-container">
                                 <h3 className='heading'>Log In</h3>
                                 <Form onSubmit={loginHandler} className='login-logout-form'>
-
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Label>Email address</Form.Label>
                                         <Form.Control type="email" placeholder="Enter Email" name='email' />
@@ -118,17 +116,12 @@ const Login = () => {
                                     <button onClick={handlerForGoogleSignin} className='thirdparty-signup'><img className='google-icon' src={google} alt="" /> Continue with Google</button>
                                     <button onClick={handlerForGithubSignin} className='thirdparty-signup'> <img className='github-icon' src={github} alt="" /> Continue with GitHub</button>
                                 </div>
-
                                 <p className='already-have-acc'>Don't you have an account? <Link to={'/signup'}>Sign Up</Link></p>
-
                             </div>
                         </Col>
-
                     </Row>
                 </Container>
             </div>
-
-
         </div>
     );
 };
