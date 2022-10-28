@@ -110,9 +110,7 @@ const Signup = () => {
         <div className='login-signup'>
             <div className="overlay">
                 <Container>
-                    <Row>
-                        <Col lg='7'>
-                        </Col>
+                    <Row className='d-flex justify-content-center'>
                         <Col lg='5'>
                             <div className="login-signup-container">
                                 <h3 className='heading'>Sign Up</h3>

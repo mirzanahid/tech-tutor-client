@@ -18,12 +18,13 @@ const Checkout = () => {
                     <Col lg="6">
                         <div className="checkout">
                             <h3 className='text-success'>Thank You for purchase premium access</h3>
+                            <h2 className='checkout-customerinfo text-color4'>Course Information:</h2>
                             <h2 className='checkout-courseName text-color'>Course Name: {title}</h2>
                             <h2 className='checkout-customerinfo text-color4'>Customer Information:</h2>
                             <p className='text-color '>Your name:{user.displayName}</p>
                             <p className='text-color'>Your Email: {user.email}</p>
 
-                            <Link to={'/courses'} className='checkout-purchase-btn bg-color text-color3'>Purchase More</Link>
+                            <Link to={'/courses'} className='checkout-purchase-btn secondary-button'>Purchase More</Link>
                         </div>
 
                     </Col>

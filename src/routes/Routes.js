@@ -1,6 +1,7 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import Main from '../layout/Main';
+import Blog from '../pages/Blog/Blog';
 import Courses from '../pages/Courses/Courses';
 import Error from '../pages/Error/Error';
 import Faq from '../pages/Faq/Faq';
@@ -17,7 +18,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
-        errorElement:<Error></Error>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
@@ -26,22 +27,26 @@ export const router = createBrowserRouter([
             {
                 path: '/courses',
                 element: <Courses></Courses>,
-                loader: () => fetch('http://localhost:5000/courses')
+                loader: () => fetch('https://tech-tutor-server.vercel.app/courses')
             },
             {
                 path: '/courses/:id',
                 element: <CourseDetails></CourseDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/courses/${params.id}`),
+                loader: ({ params }) => fetch(`https://tech-tutor-server.vercel.app/courses/${params.id}`),
 
             },
             {
                 path: '/checkout/:id',
                 element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/checkout/${params.id}`),
+                loader: ({ params }) => fetch(`https://tech-tutor-server.vercel.app/checkout/${params.id}`),
             },
             {
                 path: '/faq',
                 element: <Faq></Faq>,
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>,
             },
             {
                 path: '/login',

@@ -1,5 +1,5 @@
 
-.tg-list-item ul,li {
+.tg-list-item {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -86,7 +86,7 @@
 }
 
 .tgl-ios+.tgl-btn {
-    background: #fbfbfb;
+    background: #61777F;
     border-radius: 2em;
     padding: 2px;
     transition: all 0.4s ease;
@@ -113,7 +113,7 @@
 }
 
 .tgl-ios:checked+.tgl-btn {
-    background: #86d993;
+    background: #51bfa1;
 }
 
 .tgl-ios:checked+.tgl-btn:active {

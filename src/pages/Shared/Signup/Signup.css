@@ -2,9 +2,11 @@
     background: url(../../../assets/login-bg.jpg) no-repeat;
     background-size: cover;
     position: relative;
-    height: 1000px;
+    height: 1200px;
 }
-
+.login-single{
+    height: 900px;
+}
 .login-signup .overlay {
 
     background: rgba(0, 0, 0, 0.5);
@@ -19,6 +21,7 @@
 .login-signup-container {
     background: #fff;
     padding: 50px 60px;
+    margin-top: 50px;
 }
 
 .login-signup-container .heading {

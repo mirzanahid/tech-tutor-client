@@ -75,19 +75,17 @@ const Login = () => {
             .then(result => {
                 navigate(from, { replace: true })
                 load(false)
-             
+
             })
             .catch(error => {
             })
     }
 
     return (
-        <div className='login-signup'>
+        <div className='login-signup login-single'>
             <div className="overlay">
                 <Container>
-                    <Row>
-                        <Col lg='7'>
-                        </Col>
+                    <Row className='d-flex justify-content-center'>
                         <Col lg='5'>
                             <div className="login-signup-container">
                                 <h3 className='heading'>Log In</h3>

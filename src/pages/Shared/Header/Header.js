@@ -26,14 +26,13 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto align-items-center justify-content-between nav">
 
-            <Link className='nav-item text-color8' to={'/'}>Home</Link>
-            <Link className='nav-item text-color8' to={'/courses'}>Our Courses</Link>
-            <Link className='nav-item text-color8' to={'/faq'}>Faq</Link>
-            <Link className='nav-item text-color8' to={'/blog'}>Blog</Link>
-            <Link className='nav-item text-color8' to={'/contact'}>Contact</Link>
+            <Link className='nav-item sub-heading active text-color8' to={'/'}>Home</Link>
+            <Link className='nav-item sub-heading text-color8' to={'/courses'}>Our Courses</Link>
+            <Link className='nav-item sub-heading text-color8' to={'/faq'}>Faq</Link>
+            <Link className='nav-item sub-heading text-color8' to={'/blog'}>Blog</Link>
           </Nav>
           <div className="right d-flex align-items-center">
-          <Toggle></Toggle>
+            <Toggle></Toggle>
             {
               user?.uid ?
                 <div className='profile'>
@@ -58,7 +57,7 @@ const Header = () => {
                 <Link className='nav-item-btn bg-color text-color3' to={'/login'}>Log in</Link>
 
             }
-         
+
           </div>
         </Navbar.Collapse>
       </Container>

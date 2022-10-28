@@ -1,16 +1,12 @@
-.footer{
- padding-top: 60px;
- margin-top: 100px;
+.footer {
+    padding-top: 60px;
 }
+
 .footer-logo {
     width: 250px;
 }
 
 .footer-paragraph {
-    font-family: Arimo;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 330px;
@@ -49,14 +45,12 @@
     padding-left: 0;
 }
 
+.quick-link ul li {
+    list-style: none;
+}
+
 .quick-link ul li a {
-    font-family: Arimo;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 20px;
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .contact-information h3 {
@@ -103,20 +97,184 @@
 }
 
 .contact-info p {
-    font-family: Arimo;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
     margin-bottom: 0;
 }
-.footer-bottom{
+
+.footer-bottom {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
 }
-.footer-copyright{
+
+.footer-copyright {
     text-align: center;
     font-family: Arimo;
     font-size: 16px;
     font-weight: 400;
+}
+
+
+/* responsive for mobile device */
+@media only screen and (max-width: 767.98px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+
+    .footer-paragraph {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 290px;
+        margin: 25px auto;
+    }
+
+    .social-no-margin {
+        margin-right: 0 !important;
+    }
+
+    .quick-link {
+        margin-top: 20px;
+    }
+
+    .footer-links h3 {
+        margin-bottom: 30px;
+    }
+
+    .contact-info-main {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .contact-info-item {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .contact-info {
+        padding-left: 15px;
+        width: 220px;
+    }
+
+    .contact-information h3 {
+        margin-bottom: 35px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+    }
+}
+
+
+
+/* responsive for mobile-landscape device */
+@media only screen and (min-width: 767px) and (max-width: 991.98px) {
+
+
+    .footer-logo {
+        width: 200px;
+    }
+
+    .footer-paragraph {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 220px;
+        margin: 25px auto;
+    }
+    .footer-social ul li {
+        margin-right: 15px;
+
+    }
+    .social-no-margin {
+        margin-right: 0 !important;
+    }
+
+    .quick-link {
+        margin-top: 0;
+    }
+
+    .footer-links h3 {
+        margin-bottom: 30px;
+    }
+
+    .contact-info-main {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .contact-info-item {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .contact-info {
+        padding-left: 15px;
+        width: 220px;
+    }
+
+    .contact-information h3 {
+        margin-bottom: 35px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* responsive for laptop device */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    .footer-logo {
+        width: 200px;
+    }
+
+    .footer-paragraph {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 220px;
+        margin: 25px 0;
+    }
+    .footer-social ul li {
+        margin-right: 15px;
+
+    }
+    .social-no-margin {
+        margin-right: 0 !important;
+    }
+
+    .quick-link {
+        margin-top: 0;
+    }
+
+    .footer-links h3 {
+        margin-bottom: 30px;
+    }
+
+    .contact-info-main {
+        width: 340px;
+    }
+
+    .contact-info-item {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .contact-info {
+        padding-left: 15px;
+        width: 280px;
+    }
+
+    .contact-information h3 {
+        margin-bottom: 35px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+    }
 }

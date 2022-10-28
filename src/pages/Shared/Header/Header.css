@@ -9,13 +9,22 @@
 }
 
 .nav-item {
-    font-family: Arimo;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 30px;
-    text-decoration: none;
     margin-left: 30px;
-    transition: .4s;
+    position: relative;
+}
+
+.nav-item::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 0;
+    width: 50%;
+    background: #51bfa1;
+    content: '';
+}
+
+.active::after {
+    height: 4px;
 }
 
 .tutor-logo {
@@ -131,6 +140,74 @@
     display: block;
 }
 
-/* .profile-popup:hover{
-    display: block;
-} */
+
+/* responsive for mobile device */
+@media only screen and (max-width: 991.98px) {
+    .tutor-logo {
+        width: 130px;
+    }
+
+    .nav {
+        margin-left: 0;
+    }
+
+    .navbar-collapse {
+        background: #fff;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    
+    }
+
+    .nav-item {
+        margin-left: 0;
+
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    .tg-list-item {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .profile {
+        margin-left: 0;
+    }
+
+    .profile-info-container {
+        flex-direction: column;
+    }
+
+    .profile-popup-main {
+        width: 300px;
+        right: 35%;
+        bottom: -150px;
+        z-index: 999;
+        padding-top: 16px;
+        text-align: center;
+        transform: translateX(50%);
+    }
+
+    .profile-popup {
+        width: 300px;
+        padding: 20px 20px;
+
+    }
+
+    .inner-profile {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .inner-profile img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .signout-btn {
+        margin-top: 30px;
+        display: inline-block;
+    }
+}

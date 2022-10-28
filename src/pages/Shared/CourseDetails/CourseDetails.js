@@ -10,7 +10,7 @@ const ref = React.createRef();
 
 const CourseDetails = () => {
     const course = useLoaderData()
-    const { photo_url, instructor, price, ratings,id } = course;
+    const { photo_url, instructor, price, ratings, id } = course;
     const { heading, description, topics, duration, lectures, enrolled, level, languages } = course.details;
     return (
         <div className='course-detail'>
@@ -18,12 +18,12 @@ const CourseDetails = () => {
                 <Row className='d-flex justify-content-center'>
                     <Col lg='7' ref={ref}>
                         <div className="course-details-top">
-                            <h2 className='course-details-heading text-color4'>{heading}</h2>
+                            <h2 className='course-details-heading text-color'>{heading}</h2>
                             <div className="ratings details-ratings">
                                 <p className='d-flex align-items-center'><FaStar className='star-icon text-color6' /><span className='text-color'>{ratings.star}({ratings.number})</span></p>
                             </div>
                             <Pdf targetRef={ref} filename="code-example.pdf">
-                                {({ toPdf }) => <button onClick={toPdf} className='course-detail-pdf-btn bg-color text-color2' >Download PDF</button>}
+                                {({ toPdf }) => <button onClick={toPdf} className='course-detail-pdf-btn secondary-button' >Download PDF</button>}
                             </Pdf>
 
                         </div>
@@ -32,11 +32,11 @@ const CourseDetails = () => {
                         </div>
                         <div className="course-details-container">
                             <div className="course-description">
-                                <h3 className='course-details-headers text-color4'>Course Description:</h3>
+                                <h3 className='course-details-headers text-color'>Course Description:</h3>
                                 <p className='course-details-description text-color'>{description}</p>
                             </div>
                             <div className="course-topics">
-                                <h4 className='course-details-headers text-color4'>What you'll learn:</h4>
+                                <h4 className='course-details-headers text-color'>What you'll learn:</h4>
                                 <div className="course-topics-list text-color" dangerouslySetInnerHTML={{ __html: topics }} />
 
                             </div>
@@ -77,7 +77,7 @@ const CourseDetails = () => {
                                     </tbody>
                                 </Table>
                             </div>
-                            <Link to={`/checkout/${id}`} className='premium-btn text-color3 bg-color'>Get premium access</Link>
+                            <Link to={`/checkout/${id}`} className='premium-btn secondary-button'>Get premium access</Link>
                         </div>
                     </Col>
                 </Row>

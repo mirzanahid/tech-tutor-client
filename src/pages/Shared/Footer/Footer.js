@@ -10,37 +10,37 @@ const Footer = () => {
         <div className='footer bg-color'>
             <Container>
                 <Row>
-                    <Col lg='4'>
+                    <Col xl='4' lg='4' md='4'>
                         <Link><img className='footer-logo' src={logo2} alt="" /></Link>
-                        <p className='pragraph  footer-paragraph text-color2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p className='pragraph footer-paragraph text-color2'> Ut enim ad minim veniam, quis nostrud exercitation ullmco laboris nisi ut aliquip ex ea.</p>
+                        <p className='secondary-paragraph  footer-paragraph'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p className='secondary-paragraph footer-paragraph '> Ut enim ad minim veniam, quis nostrud exercitation ullmco laboris nisi ut aliquip ex ea.</p>
                         <div className="footer-social">
                             <ul>
                                 <li className='bg-color2 '>  <Link className='social-icons facebook-icon text-color8'><FaFacebookF /></Link></li>
                                 <li className='bg-color2 '><Link className='social-icons twitter-icon  text-color8'><FaTwitter /></Link></li>
                                 <li className='bg-color2 '> <Link className='social-icons linkedin-icon text-color8'><FaLinkedinIn /></Link></li>
-                                <li className='bg-color2 '><Link className='social-icons youtube-icon text-color8'><FaYoutube /></Link></li>
+                                <li className='bg-color2 social-no-margin'><Link className='social-icons youtube-icon text-color8'><FaYoutube /></Link></li>
                             </ul>
 
 
 
                         </div>
                     </Col>
-                    <Col lg='2'>
+                    <Col xl='2' lg='3' md='3'>
                         <div className="footer-links">
                             <div className="quick-link">
                                 <h3 className='text-color2'>Quick Links</h3>
                                 <ul >
-                                    <li> <Link className='text-color9'>Home</Link></li>
-                                    <li> <Link className='text-color9'>Our Courses</Link></li>
-                                    <li> <Link className='text-color9'>Faq</Link></li>
-                                    <li> <Link className='text-color9'>Blog</Link></li>
-                                    <li> <Link className='text-color9'>Contact</Link></li>
+                                    <li> <Link className='text-color9 sub-heading'>Home</Link></li>
+                                    <li> <Link className='text-color9 sub-heading'>Our Courses</Link></li>
+                                    <li> <Link className='text-color9 sub-heading'>Faq</Link></li>
+                                    <li> <Link className='text-color9 sub-heading'>Blog</Link></li>
+                                    <li> <Link className='text-color9 sub-heading'>Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
                     </Col>
-                    <Col lg='6'>
+                    <Col xl='6' lg='5' md='5'>
                         <div className="contact-information">
                             <h3 className='text-color2'>Contact Information</h3>
 
@@ -51,7 +51,7 @@ const Footer = () => {
                                     </div>
                                     <div className="contact-info">
                                         <span className='text-color2 bg-color3'>LOCATION</span>
-                                        <p className='text-color2'>44 Cunningham CtSaint Charles, Missouri(MO), 63301</p>
+                                        <p className='secondary-paragraph'>44 Cunningham CtSaint Charles, Missouri(MO), 63301</p>
                                     </div>
                                 </div>
                                 <div className="contact-info-item">
@@ -60,7 +60,7 @@ const Footer = () => {
                                     </div>
                                     <div className="contact-info">
                                         <span className='text-color2 bg-color3'>PHONE</span>
-                                        <p className='text-color2'>+880 1234 567 890</p>
+                                        <p className='secondary-paragraph'>+880 1234 567 890</p>
                                     </div>
                                 </div>
                                 <div className="contact-info-item">
@@ -69,7 +69,7 @@ const Footer = () => {
                                     </div>
                                     <div className="contact-info">
                                         <span className='text-color2 bg-color3'>EMAIL</span>
-                                        <p className='text-color2'>techtutor@gmail.com</p>
+                                        <p className='secondary-paragraph'>techtutor@gmail.com</p>
                                     </div>
                                 </div>
                             </div>

@@ -1,21 +1,20 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
-import NewsLetter from '../Shared/NewsLetter/NewsLetter';
-import './Faq.css'
+import './Blog.css';
 
-const Faq = () => {
+const Blog = () => {
     return (
         <div>
             <Container>
                 <Row className='d-flex justify-content-center'>
                     <Col lg='8'>
                         <div className="faq">
-                            <h3 className='faq-heading text-color'>Frequently Asked Questions</h3>
+                            <h3 className='faq-heading text-color'>Our Blog</h3>
 
                             <Accordion defaultActiveKey={['0']} alwaysOpen>
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header>How do I take a TechTutor course?</Accordion.Header>
+                                    <Accordion.Header>What is cors?</Accordion.Header>
                                     <Accordion.Body>
                                         <p className='text-color'>
                                             TechTutor courses are entirely on-demand and they can be accessed from several different devices and platforms, including a desktop, laptop, and our mobile app.
@@ -27,7 +26,7 @@ const Faq = () => {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
                                     <Accordion.Header>
-                                        What is required to do course on TechTutor?</Accordion.Header>
+                                        Why are you using firebase? What other options do you have to implement authentication?</Accordion.Header>
                                     <Accordion.Body>
 
                                         <p className='text-color'>You need a computer and  required software we will provide you </p>
@@ -36,7 +35,18 @@ const Faq = () => {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
                                     <Accordion.Header>
-                                        How can I pay for a course?</Accordion.Header>
+                                        How does the private route work?
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+
+                                        <p className='text-color'>TechTutor supports several different payment methods, depending on your account country and location.  </p>
+
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="3">
+                                    <Accordion.Header>
+                                        What is Node? How does Node work?
+                                    </Accordion.Header>
                                     <Accordion.Body>
 
                                         <p className='text-color'>TechTutor supports several different payment methods, depending on your account country and location.  </p>
@@ -48,9 +58,8 @@ const Faq = () => {
                     </Col>
                 </Row>
             </Container>
-            <NewsLetter></NewsLetter>
         </div>
     );
 };
 
-export default Faq;
+export default Blog;

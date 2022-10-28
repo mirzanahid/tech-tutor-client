@@ -24,7 +24,7 @@ const SingleCourse = ({ course }) => {
 
                 </div>
                 <div className="course-info">
-                    <h4 className='text-color4'>{title}</h4>
+                    <h4 className='text-color'>{title}</h4>
                     <p className='text-color'>{description.length > 110 ? description.slice(0, 110) + '...' : description}</p>
                 </div>
                 <div className="course-bottom">
@@ -40,7 +40,7 @@ const SingleCourse = ({ course }) => {
                     <p className='d-flex align-items-center'><FaStar className='star-icon text-color6' /><span className='text-color'>{ratings.star}</span></p>
 
                 </div>
-                <Link className='course-details-btn bg-color text-color3' to={`/courses/${id}`}>View Details</Link>
+                <Link className='course-details-btn secondary-button' to={`/courses/${id}`}>View Details</Link>
 
             </div>
 
