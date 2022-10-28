@@ -4,9 +4,11 @@
     position: relative;
     height: 1200px;
 }
-.login-single{
+
+.login-single {
     height: 900px;
 }
+
 .login-signup .overlay {
 
     background: rgba(0, 0, 0, 0.5);
@@ -35,7 +37,7 @@
 }
 
 .login-signup-container form {
-    width: 400px;
+    width: auto;
 }
 
 .login-signup-container form label {
@@ -56,24 +58,28 @@
     border-radius: 5px;
 
 }
+
 .login-signup-container .check-input {
     display: flex;
     align-items: center;
 }
-.login-signup-container .check-input input{
-      height: 16px;
-      width: 16px;
-      margin-right: 8px;
-      margin-top: 0;
+
+.login-signup-container .check-input input {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+    margin-top: 0;
 }
-.login-signup-container .check-input label{
+
+.login-signup-container .check-input label {
     font-family: Arimo;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
     color: #61777F;
 }
-.login-signup-container .check-input a{
+
+.login-signup-container .check-input a {
     text-decoration: none;
     font-family: Arimo;
     font-size: 15px;
@@ -82,6 +88,7 @@
     color: #1273EB;
 
 }
+
 .submit-btn {
     width: 100%;
     padding: 10px 0 !important;
@@ -90,9 +97,10 @@
     font-weight: 600;
     line-height: 30px;
     color: #fff;
-    background: #1273EB;
+    background: #51bfa1;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .already-have-acc {
@@ -102,7 +110,7 @@
     line-height: 30px;
     color: #61777F;
     margin-top: 10px;
-    
+
 }
 
 .already-have-acc a {
@@ -146,4 +154,38 @@
     color: #61777F;
     text-align: center;
     margin-top: 10px;
+}
+
+
+
+/* responsive for mobile device */
+@media only screen and (max-width: 575.98px) {
+
+
+
+    .login-signup-container {
+        padding: 30px 15px;
+        margin-top: 50px;
+    }
+
+    .already-have-acc {
+        font-size: 14px;
+    }
+
+    .already-have-acc a {
+        font-size: 15px;
+
+    }
+
+}
+
+/* responsive for mobile device */
+@media only screen and (min-width: 576px) {
+    .login-signup-container form {
+        width: 400px;
+    }
+    .login-signup-container {
+        width: 520px;
+        margin: 30px auto;
+    }
 }

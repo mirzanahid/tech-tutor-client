@@ -8,6 +8,7 @@ import github from '../../../assets/github.png';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import { getAuth, GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import app from '../../../firebase/firebase.config';
+import { toast } from 'react-toastify';
 
 const auth = getAuth(app)
 // google provider
@@ -54,11 +55,20 @@ const Signup = () => {
 
         createUser(email, password)
             .then(result => {
-                const user = result.user
-                console.log(user)
-                // navigate('/login')
-                form.reset()
+                navigate('/')
                 handlerForUpdateNameAndPhoto(name, image)
+                form.reset()
+
+                toast('Sign Up Successful', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
 
             })
             .catch(error => { console.error(error) })
@@ -111,7 +121,7 @@ const Signup = () => {
             <div className="overlay">
                 <Container>
                     <Row className='d-flex justify-content-center'>
-                        <Col lg='5'>
+                        <Col lg='7'>
                             <div className="login-signup-container">
                                 <h3 className='heading'>Sign Up</h3>
                                 <Form onSubmit={signupHandler} className='login-logout-form'>
@@ -144,9 +154,9 @@ const Signup = () => {
                                         <Form.Check onClick={checkedHandler} type="checkbox" />
                                         <Form.Label>I agree to the <Link>Terms of Service</Link> and <Link>Privacy Policy</Link></Form.Label>
                                     </Form.Group>
-                                    <Button className='submit-btn' type="submit" disabled={!checked}>
+                                    <button className='submit-btn' type="submit" disabled={!checked}>
                                         Sign Up
-                                    </Button>
+                                    </button>
                                 </Form>
                                 <p className='or'>Or</p>
                                 <div className="button-group">

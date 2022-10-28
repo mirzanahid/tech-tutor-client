@@ -17,6 +17,7 @@ const auth = getAuth(app)
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState({});
     const [load, setLoad] = useState(true)
+    const [dark, setDark] = useState('')
 
 
 
@@ -43,6 +44,17 @@ const AuthProvider = ({ children }) => {
         return signOut(auth)
     }
 
+
+    //dark mode
+    const darkMode=(data)=>{
+        if(data === true){
+            setDark('dark')
+        }
+        else{
+            setDark('light')
+        }
+    }
+
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
@@ -50,7 +62,14 @@ const AuthProvider = ({ children }) => {
         })
         return () => unSubscribe();
     }, []);
-    const authInfo = { user, createUser, login, logout, load, updateUserProfile }
+
+
+
+
+    const authInfo = { user, createUser, login, logout, load, updateUserProfile, darkMode,dark }
+
+
+
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

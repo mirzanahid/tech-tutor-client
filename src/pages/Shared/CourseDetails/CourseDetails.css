@@ -80,7 +80,14 @@
     font-weight: 600;
     line-height: 24px;
 }
+.course-info-table tr td{
+    color: #000 !important;
+    
+}
+.dark .course-info-table tr td{
+    color: #fff !important;
 
+}
 .premium-btn {
     margin-bottom: 60px;
     margin-top: 60px;

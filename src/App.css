@@ -1,15 +1,43 @@
-/* .dark p{
-    color: red !important;
-}
-.dark a{
-    color: red;
+/* code for dark mode start */
+.dark {
+    background: #666;
 }
 
-.App {}
-.font{
+.dark .text-color {
+    color: #fff;
+}
+
+.dark .text-color4 {
+    color: #000;
+}
+
+.dark .text-color7 {
+    color: #fff;
+}
+
+.dark .text-color8 {
+    color: #fff;
+}
+
+.dark .text-color9:hover {
     color: #61777F;
-} */
+}
 
+.dark .primary-paragraph {
+
+    color: #fff;
+}
+
+.dark .main-heading {
+    color: #fff;
+}
+
+/* code for dark mode end */
+
+/* color codes */
+.text-color99 {
+    color: #61777F;
+}
 
 .text-color {
     color: #61777F;
@@ -64,6 +92,7 @@
     color: #61777F;
 }
 
+/* background color code */
 .bg-color {
     background: #51bfa1;
 }
@@ -89,7 +118,6 @@
     text-transform: uppercase;
     color: #61777F;
 }
-
 
 .sub-heading {
     font-family: Arimo;
@@ -132,7 +160,6 @@
     line-height: 22px;
     color: #fff;
 }
-
 
 /*=============== typography css end ==================*/
 /*=============== button css start ==================*/
@@ -191,14 +218,10 @@
     color: #fff;
     background: #51bfa1;
     transition: .4s;
-
-
-
 }
 
+
 /*=============== button css end ==================*/
-
-
 
 
 
@@ -227,7 +250,6 @@
     }
 
 }
-
 
 
 /* responsive for mobile device */

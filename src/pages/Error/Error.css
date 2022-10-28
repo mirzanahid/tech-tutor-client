@@ -25,3 +25,20 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
+/* responsive for mobile device */
+@media only screen and (max-width: 575.98px) {
+    .error-image {
+        height: auto;
+        width: 280px;
+    }
+}
+
+
+@media only screen and (min-width: 576px)  and (max-width: 767.8px) {
+    .error-image {
+        height: auto;
+        width: 280px;
+    }
+}

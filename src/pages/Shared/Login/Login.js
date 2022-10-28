@@ -9,6 +9,7 @@ import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import { getAuth, GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { useState } from 'react';
 import app from '../../../firebase/firebase.config';
+import { toast } from 'react-toastify';
 
 
 const auth = getAuth(app)
@@ -38,21 +39,29 @@ const Login = () => {
         const email = form.email.value;
         const password = form.password.value;
 
-        if (!email && !password) {
-            setLogInError('please provide valid email and password')
-        }
-
-
-        if (user?.email !== email && user?.password !== password) {
-            setLogInError('your email and password is incorrect!')
-
-        }
-
+        // login with email  and password
         login(email, password)
             .then(result => {
+
                 navigate(from, { replace: true })
+                toast('Login Successful', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+                form.email.reset()
+                form.password.reset()
             })
             .catch(error => {
+                if (user?.email !== email && user?.password !== password) {
+                    setLogInError('please provide valid email and password')
+
+                }
 
             });
     }
@@ -86,7 +95,7 @@ const Login = () => {
             <div className="overlay">
                 <Container>
                     <Row className='d-flex justify-content-center'>
-                        <Col lg='5'>
+                        <Col lg='7'>
                             <div className="login-signup-container">
                                 <h3 className='heading'>Log In</h3>
                                 <Form onSubmit={loginHandler} className='login-logout-form'>

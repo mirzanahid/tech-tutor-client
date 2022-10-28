@@ -17,11 +17,11 @@ const Faq = () => {
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>How do I take a TechTutor course?</Accordion.Header>
                                     <Accordion.Body>
-                                        <p className='text-color'>
+                                        <p className='text-color99'>
                                             TechTutor courses are entirely on-demand and they can be accessed from several different devices and platforms, including a desktop, laptop, and our mobile app.
 
                                         </p>
-                                        <p className='text-color'>
+                                        <p className='text-color99'>
                                             After you enroll in a course, you can access it by clicking on the course link you will receive in your confirmation email (provided you're logged into your TechTutor account). You can also begin the course by logging in and navigating to your My learning page.</p>
                                     </Accordion.Body>
                                 </Accordion.Item>
@@ -30,7 +30,7 @@ const Faq = () => {
                                         What is required to do course on TechTutor?</Accordion.Header>
                                     <Accordion.Body>
 
-                                        <p className='text-color'>You need a computer and  required software we will provide you </p>
+                                        <p className='text-color99'>You need a computer and  required software we will provide you </p>
 
                                     </Accordion.Body>
                                 </Accordion.Item>
@@ -39,7 +39,7 @@ const Faq = () => {
                                         How can I pay for a course?</Accordion.Header>
                                     <Accordion.Body>
 
-                                        <p className='text-color'>TechTutor supports several different payment methods, depending on your account country and location.  </p>
+                                        <p className='text-color99'>TechTutor supports several different payment methods, depending on your account country and location.  </p>
 
                                     </Accordion.Body>
                                 </Accordion.Item>
