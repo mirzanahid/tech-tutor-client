@@ -15,7 +15,6 @@ import Toggle from '../Toggle/Toggle';
 const Header = () => {
   const { user, logout } = useContext(AuthContext);
 
-  console.log(user)
 
 
   return (
