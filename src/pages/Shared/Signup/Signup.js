@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import { Link, useNavigate } from 'react-router-dom';
 import './Signup.css';
@@ -154,9 +154,9 @@ const Signup = () => {
                                         <Form.Check onClick={checkedHandler} type="checkbox" />
                                         <Form.Label>I agree to the <Link>Terms of Service</Link> and <Link>Privacy Policy</Link></Form.Label>
                                     </Form.Group>
-                                    <button className='submit-btn' type="submit" disabled={!checked}>
+                                    <Button className='submit-btn' type="submit" disabled={!checked}>
                                         Sign Up
-                                    </button>
+                                    </Button>
                                 </Form>
                                 <p className='or'>Or</p>
                                 <div className="button-group">

@@ -92,15 +92,14 @@
 .submit-btn {
     width: 100%;
     padding: 10px 0 !important;
-    font-family: Arimo;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 30px;
-    color: #fff;
-    background: #51bfa1;
-    border: none;
+    font-family: Arimo !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 30px !important;
+    color: #fff !important;
+    background: #51bfa1 !important;
+    border: 1px solid #51bfa1 !important;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .already-have-acc {
