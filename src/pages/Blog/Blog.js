@@ -11,7 +11,6 @@ const Blog = () => {
                     <Col lg='8'>
                         <div className="faq">
                             <h3 className='faq-heading text-color'>Our Blog</h3>
-
                             <Accordion defaultActiveKey={['0']} alwaysOpen>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>What is cors?</Accordion.Header>

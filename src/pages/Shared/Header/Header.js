@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -9,24 +9,31 @@ import './Header.css';
 import logo from '../../../assets/logo.svg'
 import avatar from '../../../assets/avatar.svg'
 import Toggle from '../Toggle/Toggle';
+import { NavLink } from 'react-bootstrap';
 
 
 
 const Header = () => {
   const { user, logout } = useContext(AuthContext);
+  const [expanded, setExpanded] = useState(false);
+
+  const logoutExpanded = () => {
+    logout();
+    setExpanded(false);
+  }
 
 
   return (
-    <Navbar sticky="top" className='navbar' expand="lg">
+    <Navbar expanded={expanded} sticky="top" className='navbar' expand="lg">
       <Container>
         <Navbar.Brand ><Link to={'/'}> <img className='tutor-logo' src={logo} alt="logo" /> </Link></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto align-items-center justify-content-between nav">
-            <Link className='nav-item sub-heading active text-color8' to={'/'}>Home</Link>
-            <Link className='nav-item sub-heading text-color8' to={'/courses'}>Our Courses</Link>
-            <Link className='nav-item sub-heading text-color8' to={'/faq'}>Faq</Link>
-            <Link className='nav-item sub-heading text-color8' to={'/blog'}>Blog</Link>
+            <Link onClick={() => setExpanded(false)} className='nav-item sub-heading active text-color8' to={'/'}>Home</Link>
+            <Link onClick={() => setExpanded(false)} className='nav-item sub-heading text-color8' to={'/courses'}>Our Courses</Link>
+            <Link onClick={() => setExpanded(false)} className='nav-item sub-heading text-color8' to={'/faq'}>Faq</Link>
+            <Link onClick={() => setExpanded(false)} className='nav-item sub-heading text-color8' to={'/blog'}>Blog</Link>
           </Nav>
           <div className="right d-flex align-items-center">
             <Toggle></Toggle>
@@ -43,15 +50,15 @@ const Header = () => {
                         <div className="profile-info">
                           <h4 className='profile-name'>{user?.displayName || 'User Name'}</h4>
                           <p className='profile-email'>{user?.email}</p>
-                          <Link className='profile-visit' to={'/profile'}>Visit Account</Link>
+                          <Link onClick={() => setExpanded(false)} className='profile-visit' to={'/profile'}>Visit Account</Link>
                         </div>
                       </div>
-                      <Link onClick={logout} to={'/login'} className='signout-btn'>Sign Out</Link>
+                      <Link onClick={logoutExpanded} to={'/login'} className='signout-btn'>Sign Out</Link>
                     </div>
                   </div>
                 </div>
                 :
-                <Link className='nav-item-btn bg-color text-color3' to={'/login'}>Log in</Link>
+                <Link onClick={() => setExpanded(false)} className='nav-item-btn bg-color text-color3' to={'/login'}>Log in</Link>
             }
           </div>
         </Navbar.Collapse>

@@ -2,7 +2,9 @@
 .dark {
     background: #666;
 }
-
+.dark .navbar-collapse{
+    background-color: #666;
+}
 .dark .text-color {
     color: #fff;
 }
